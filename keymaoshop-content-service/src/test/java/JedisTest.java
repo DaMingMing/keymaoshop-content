@@ -23,6 +23,8 @@ public class JedisTest {
         jedisCluster.set("hello","xiaojm");
         String str = jedisCluster.get("hello");
         System.out.println(str);
+
+        jedisCluster.del("hello");
         jedisCluster.close();
     }
 
